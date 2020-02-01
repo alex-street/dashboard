@@ -50,12 +50,12 @@ Promise.all([
               function incrementCurrent(){
                 document.getElementById("currentDay").innerHTML = " " + Math.round(temp) + "º";
                 document.getElementById("currentDayIcon").className = document.getElementById("currentDayIcon").className.substring(0,10);
-                document.getElementById("currentDayIcon").className += " wi-owm-" + dayOrNight() + "-" + id;
+                document.getElementById("currentDayIcon").className += " wi wi-owm-" + dayOrNight() + "-" + id;
                 document.getElementById("currentDayDescription").innerHTML = description;
               }
               document.getElementById("currentDay").innerHTML = name;
               document.getElementById("currentDay").innerHTML = " " + Math.round(temp) + "º";
-              document.getElementById("currentDayIcon").className += " wi-owm-" + dayOrNight() + "-" + id;
+              document.getElementById("currentDayIcon").className += " wi wi-owm-" + dayOrNight() + "-" + id;
               document.getElementById("currentDayDescription").innerHTML = description;
             }),
             fetch(forecastLink).then(
