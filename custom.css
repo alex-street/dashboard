@@ -1,2 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
-font-family: 'Karla', sans-serif;
+body {
+  font-family: 'Karla', sans-serif;
+}
