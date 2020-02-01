@@ -68,7 +68,16 @@ Promise.all([
                 var max = -100;
                 var min = 100;
                 let id = future.list[day*8].weather[0].id;
-                document.querySelectorAll("div.forecast > i")[day].className += " owf-" + id;
+                function dayOrNight(){
+                  let val = future.list[day*8].sys.pod;
+                  if (val == "n"){
+                   return "night";
+                  }
+                  else {
+                   return "day";
+                  }          
+                }
+                document.querySelectorAll("div.forecast > i")[day]. wi wi-owm-" + dayOrNight() + "-" + id;
                 for (let h = 0; h < 8; h++){
                   if (max < future.list[(day*8)+h].main.temp_max)
                     max=future.list[(day*8)+h].main.temp_max;
