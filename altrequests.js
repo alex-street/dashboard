@@ -37,11 +37,20 @@ Promise.all([
               let description = current.weather[0].description;
               let wind = current.wind;
               let sunset = current.sys.sunset;
+              function dayOrNight(){
+                let val = current.system.pod;
+                if (val == "n"){
+                  return "night";
+                }
+                else {
+                  return "day";
+                }          
+              }
               var intervalCurrent = setInterval(incrementCurrent, 120000);
               function incrementCurrent(){
                 document.getElementById("currentDay").innerHTML = " " + Math.round(temp) + "º";
                 document.getElementById("currentDayIcon").className = document.getElementById("currentDayIcon").className.substring(0,10);
-                document.getElementById("currentDayIcon").className += " owf-" + id;
+                document.getElementById("currentDayIcon").className += " wi-owm-" + dayOrNight() + "-" + id;
                 document.getElementById("currentDayDescription").innerHTML = description;
               }
               document.getElementById("currentDay").innerHTML = name;
