@@ -38,7 +38,7 @@ Promise.all([
               let wind = current.wind;
               let sunset = current.sys.sunset;
               function dayOrNight(){
-                let val = current.weather.icon.substring(current.weather.icon.length);
+                let val = current.weather[0].icon.substring(current.weather[0].icon.length);
                 if (val == "n"){
                   return "night";
                 }
