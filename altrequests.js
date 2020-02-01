@@ -77,7 +77,7 @@ Promise.all([
                    return "day";
                   }          
                 }
-                document.querySelectorAll("div.forecast > i")[day]. wi wi-owm-" + dayOrNight() + "-" + id;
+                document.querySelectorAll("div.forecast > i")[day].className += " wi wi-owm-" + dayOrNight() + "-" + id;
                 for (let h = 0; h < 8; h++){
                   if (max < future.list[(day*8)+h].main.temp_max)
                     max=future.list[(day*8)+h].main.temp_max;
