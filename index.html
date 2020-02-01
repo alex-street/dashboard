@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/custom.css">
+    <link href="scss/owfont-master/css/owfont-regular.css" rel="stylesheet" type="text/css">
+    <title>Alexis Bradstreet's Dashboard</title>
+  </head>
+  <body style="height: 100%;">
+    <div class="container h-100 py-3">
+      <div class="row mx-0 align-items-center h-100">
+        <div class="row">
+          <div class="col-12 col-md-3 row mx-0">
+            <div id="clock" class="col-12">
+              <h1></h1>
+              <h2></h2>
+              <h3></h3>
+              <p></p>
+            </div>
+            <div id="nasa" class="col-12 px-0">
+              <div class="card border-light my-3" id="nasaPOTD">
+                <img class="card-img" alt="NASA photo of the day">
+                <div class="card-body alert-gray-faded p-2">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="headlines" class="col-12 col-md-9">
+            <div class="alert newsalert alert-gray-faded" role="alert">
+              <h6 class="alert-heading"></h6>
+              <small></small>
+            </div>
+            <div class="alert newsalert alert-gray-faded" role="alert">
+              <h6 class="alert-heading"></h6>
+              <small></small>
+            </div>
+            <div class="alert newsalert alert-gray-faded" role="alert">
+              <h6 class="alert-heading"></h6>
+              <small></small>
+            </div>
+            <div class="alert alert border-gray-light" role="alert">
+              <h6 class="alert-heading" id="wordOfTheDay">Word of the day: </h6>
+              <small id=definition>Definition of the word...</small>
+            </div>
+          </div>
+          <div id="forecasts" class="col-12 row no-gutters text-center">
+            <div class="col-4 col-md-3">
+              <h3>Today</h3>
+              <p id="currentDay"></p>
+              <i class="owf owf-4x" id ="currentDayIcon"></i>
+              <p id="currentDayDescription"></p>
+            </div>
+            <div class="col-8 col-md-9 row no-gutters">
+              <div class="forecast col-6 col-md-3">
+                <h4></h4>
+                <i class="owf owf-2x"></i>
+                <ul class="list-inline">
+                  <li class="list-inline-item max"></li>
+                  <li class="list-inline-item text-white min"></li>
+                </ul>
+              </div>
+              <div class="forecast col-6 col-md-3">
+                <h4></h4>
+                <i class="owf owf-2x"></i>
+                <ul class="list-inline">
+                  <li class="list-inline-item max"></li>
+                  <li class="list-inline-item text-white min"></li>
+                </ul>
+              </div>
+              <div class="forecast col-6 col-md-3">
+                <h4></h4>
+                <i class="owf owf-2x"></i>
+                <ul class="list-inline">
+                  <li class="list-inline-item max"></li>
+                  <li class="list-inline-item text-white min"></li>
+                </ul>
+              </div>
+              <div class="forecast col-6 col-md-3">
+                <h4></h4>
+                <i class="owf owf-2x"></i>
+                <ul class="list-inline">
+                  <li class="list-inline-item max"></li>
+                  <li class="list-inline-item text-white min"></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="jquery.slim.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/JavaScript" src="alternative.js"></script>
+  <script type="text/JavaScript" src="altrequests.js"></script>
+
+</body>
+</html>
