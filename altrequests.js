@@ -55,7 +55,7 @@ Promise.all([
               }
               document.getElementById("currentDay").innerHTML = name;
               document.getElementById("currentDay").innerHTML = " " + Math.round(temp) + "º";
-              document.getElementById("currentDayIcon").className += " owf-" + id;
+              document.getElementById("currentDayIcon").className += " wi-owm-" + dayOrNight() + "-" + id;
               document.getElementById("currentDayDescription").innerHTML = description;
             }),
             fetch(forecastLink).then(
