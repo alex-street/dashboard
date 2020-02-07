@@ -129,6 +129,8 @@ Promise.all([
                 }
             ).then(function(jsonData){
               let nasaPhoto = jsonData;
+              var imgNasa = document.querySelector("div#nasaPOTD > img").getBoundingClientRect();
+              console.log(imgNasa.top, imgNasa.right, imgNasa.bottom, imgNasa.left);
               document.querySelector("div#nasaPOTD > img").src = nasaPhoto.hdurl;
               document.querySelector("div#nasaPOTD > div.card-body > p").innerHTML = nasaPhoto.title;
             }),
